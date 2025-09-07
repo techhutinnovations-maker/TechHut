@@ -1,5 +1,5 @@
 import React from 'react';
-import '../assets/css/Projects.css'; // Assuming you'll update this CSS
+import '../assets/css/Projects.css';
 import learnBuildImg from '../assets/images/ARISE WEBSITE_how-08.webp'; // Reusing for Learn & Build
 import showcaseCertifyImg from '../assets/images/ARISE WEBSITE_how-10.png'; // Reusing for Showcase
 import getRecognisedImg from '../assets/images/ARISE WEBSITE_how-11.webp'; // Reusing for Get Recognized
