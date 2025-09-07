@@ -1,0 +1,113 @@
+.projects-wrapper {
+  background-color: #f8f9fa;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 60px 20px; /* Reduced padding for more compactness */
+}
+
+/* Header */
+.projects-header {
+  text-align: center;
+  max-width: 800px; /* Slightly reduced max-width */
+  margin: 0 auto 40px auto; /* Reduced margin */
+}
+
+.projects-title {
+  font-size: 32px; /* Slightly reduced font size */
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #2F66AC;
+}
+
+.projects-subtitle {
+  font-size: 18px; /* Slightly reduced font size */
+  line-height: 1.6;
+  color: #444;
+}
+
+/* Grid for 3 cards */
+.projects-grid.three-cards {
+  display: grid; /* Changed to CSS Grid for better control */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* 3 columns, responsive */
+  gap: 25px; /* Reduced gap */
+  max-width: 1000px; /* Max width for the grid to keep it contained */
+  margin: 0 auto; /* Center the grid */
+}
+
+/* Cards */
+.projects-card {
+  /* Removed fixed width, now handled by grid-template-columns */
+  min-height: 380px; /* Slightly reduced min-height */
+  background-color: #fff;
+  border-radius: 20px; /* Slightly smaller border-radius */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Lighter shadow */
+  padding: 25px; /* Increased padding inside cards for content */
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.projects-card:hover {
+  transform: translateY(-8px); /* Slightly less pronounced hover effect */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.18); /* Slightly lighter hover shadow */
+}
+
+.projects-card img {
+  width: 100%;
+  height: 140px; /* Reduced image height */
+  object-fit: cover;
+  border-radius: 10px; /* Slightly smaller border-radius for images */
+  margin-bottom: 18px; /* Adjusted margin */
+}
+
+.projects-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.projects-card .highlight {
+  color: #2c3e50;
+  font-size: 20px; /* Matched with h3 font size */
+  font-weight: 700;
+}
+
+.projects-card p {
+  font-size: 16px; /* Slightly smaller paragraph font size */
+  line-height: 1.6;
+  color: #000;
+  flex-grow: 1;
+}
+
+/* Responsive */
+@media (max-width: 992px) { /* Adjusted breakpoint for 3-card layout */
+  .projects-grid.three-cards {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Adjust for smaller screens */
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .projects-grid.three-cards {
+    grid-template-columns: 1fr; /* Single column on very small screens */
+    max-width: 350px; /* Constrain single column width */
+  }
+
+  .projects-card {
+    min-height: auto; /* Allow height to adjust */
+  }
+
+  .projects-title {
+    font-size: 26px;
+  }
+
+  .projects-subtitle {
+    font-size: 16px;
+  }
+  .projects-card img {
+    height: 180px; /* Make images a bit taller on single column */
+  }
+}
