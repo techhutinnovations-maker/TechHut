@@ -36,7 +36,7 @@ const testimonialsData = [
     id: 5,
     name: 'Yaswanth',
     quote: "These projects shaped my portfolio and career. I got real confidence to build and deploy applications, which played a big role in landing my first job.",
-    company: 'Junior Software Engineer at Kartoffel Technologies',
+    company: 'Junior Software Engineer',
     avatar: profilemen,
   },
 ];
